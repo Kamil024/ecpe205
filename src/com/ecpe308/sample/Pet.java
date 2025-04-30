@@ -3,6 +3,22 @@ package com.ecpe308.sample;
 public class Pet {
     public String name, breed; //persian, labrador, golden retriever
     public String pet_type;  //cat/dog
+    public String gender;
+
+    public String getGender() {
+        return gender;
+    }
+
+    public Pet(String name, String breed, String pet_type, String gender) {
+        this.name = name;
+        this.breed = breed;
+        this.pet_type = pet_type;
+        this.gender = gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     public String getName(){
         return name;
